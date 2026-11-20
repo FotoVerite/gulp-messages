@@ -1,9 +1,7 @@
-"use strict";
+import assert from "node:assert";
+import { describe, it } from "node:test";
 
-var assert = require("node:assert");
-var { describe, it } = require("node:test");
-
-var messages = require("../index.js");
+import messages from "../index.js";
 
 describe("messages", function () {
   it("does not have a duplicate symbol", function () {
